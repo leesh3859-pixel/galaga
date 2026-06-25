@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", "Apple SD Gothic Neo", sans-serif;
+  background: #0f0f1a;
+  color: #e8e8f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.game {
+  position: relative;
+  text-align: center;
+}
+
+h1 {
+  letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
+  color: #6cf;
+  text-shadow: 0 0 12px rgba(102, 204, 255, 0.6);
+}
+
+.layout {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+canvas#board {
+  background: #11111f;
+  border: 2px solid #333355;
+  border-radius: 6px;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.6);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 150px;
+  text-align: left;
+}
+
+.panel {
+  background: #1a1a2e;
+  border: 1px solid #333355;
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+
+.panel h2 {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #6cf;
+}
+
+canvas#next {
+  background: #11111f;
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+}
+
+.stats p {
+  font-size: 0.75rem;
+  color: #8888aa;
+  margin-top: 0.5rem;
+}
+
+.stats span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+button#start {
+  background: #6cf;
+  color: #11111f;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button#start:hover {
+  background: #9df;
+}
+
+.help p {
+  font-size: 0.72rem;
+  color: #8888aa;
+  margin: 0.2rem 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(15, 15, 26, 0.85);
+  border-radius: 6px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #6cf;
+  letter-spacing: 0.2rem;
+}
+
+.overlay.hidden {
+  display: none;
+}
