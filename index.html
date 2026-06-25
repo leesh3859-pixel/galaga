@@ -3,33 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>테트리스</title>
+  <title>갤러그</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="game">
-    <h1>TETRIS</h1>
+    <h1>GALAGA</h1>
     <div class="layout">
-      <canvas id="board" width="300" height="600"></canvas>
+      <canvas id="board" width="480" height="640"></canvas>
       <aside class="sidebar">
-        <div class="panel">
-          <h2>NEXT</h2>
-          <canvas id="next" width="120" height="120"></canvas>
-        </div>
         <div class="panel stats">
           <p>SCORE</p>
           <span id="score">0</span>
-          <p>LINES</p>
-          <span id="lines">0</span>
-          <p>LEVEL</p>
-          <span id="level">1</span>
+          <p>HIGH</p>
+          <span id="high">0</span>
+          <p>STAGE</p>
+          <span id="stage">1</span>
+          <p>LIVES</p>
+          <span id="lives">3</span>
         </div>
         <button id="start">시작 / 재시작</button>
         <div class="help">
           <p>← → : 이동</p>
-          <p>↑ : 회전</p>
-          <p>↓ : 소프트 드롭</p>
-          <p>Space : 하드 드롭</p>
+          <p>Space : 발사</p>
           <p>P : 일시정지</p>
         </div>
       </aside>
@@ -38,6 +34,6 @@
       <p id="overlay-text">PRESS START</p>
     </div>
   </div>
-  <script src="tetris.js"></script>
+  <script src="galaga.js"></script>
 </body>
 </html>
