@@ -112,8 +112,16 @@ button#start:hover {
   font-weight: bold;
   color: #6cf;
   letter-spacing: 0.2rem;
-  /* purely a label — let clicks pass through to the start button beneath */
-  pointer-events: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.overlay .hint {
+  font-size: 0.8rem;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  color: #8888aa;
 }
 
 .overlay.hidden {

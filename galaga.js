@@ -344,6 +344,12 @@
 
   startBtn.addEventListener("click", startGame);
 
+  // Clicking the overlay label itself starts or resumes the game.
+  overlay.addEventListener("click", () => {
+    if (!running) startGame();
+    else if (paused) togglePause();
+  });
+
   // ---- Initial render -----------------------------------------------------
   stars = makeStars();
   enemies = [];
