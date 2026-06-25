@@ -112,6 +112,8 @@ button#start:hover {
   font-weight: bold;
   color: #6cf;
   letter-spacing: 0.2rem;
+  /* purely a label — let clicks pass through to the start button beneath */
+  pointer-events: none;
 }
 
 .overlay.hidden {
